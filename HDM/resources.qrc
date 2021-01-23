@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>data/icons/ceiling.bmp</file>
+        <file>data/icons/concrete.bmp</file>
+        <file>data/icons/link-break-icon.png</file>
+        <file>data/icons/link-icon.png</file>
+        <file>data/icons/media-playback-large.png</file>
+        <file>data/icons/media-playback-pause-3.png</file>
+        <file>data/icons/media-playback-start-3.png</file>
+        <file>data/icons/media-playback-stop-3.png</file>
+        <file>data/icons/media-seek-backward-3.png</file>
+        <file>data/icons/media-seek-forward-3.png</file>
+        <file>data/icons/media-skip-backward-3.png</file>
+        <file>data/icons/media-skip-forward-3.png</file>
+        <file>data/icons/media-step-left-3.png</file>
+        <file>data/icons/media-step-right-3.png</file>
+        <file>data/icons/racquetTex.png</file>
+        <file>data/icons/seamlessNoise.png</file>
+        <file>data/icons/sx111.gif</file>
+        <file>data/icons/system-exit.png</file>
+        <file>data/icons/view-fullscreen.png</file>
+        <file>data/icons/wood.bmp</file>
+    </qresource>
+</RCC>
