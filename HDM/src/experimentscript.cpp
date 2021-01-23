@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- * QtVR--Physics-base inverse kinematics and inverse dynamics               *
+ * HDM_UI/HDM--Physics-base inverse kinematics and inverse dynamics               *
  * Copyright (c) 2013 Joseph Cooper                                         *
  *                                                                          *
  * This software is provided 'as-is', without any express or implied        *
@@ -52,9 +52,9 @@ void ExperimentScript::startScript()
   CapBody* cb = sw->getBody();
 
 
-  groundTruth = fopen("/Users/lijialiu/Documents/QtVR/groundTruth.txt","w");
-  markerPassFile = fopen("/Users/lijialiu/Documents/QtVR/markerPass.txt","w");
-  anglePassFile= fopen("/Users/lijialiu/Documents/QtVR/anglePass.txt","w");
+  groundTruth = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/groundTruth.txt","w");
+  markerPassFile = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/markerPass.txt","w");
+  anglePassFile= fopen("/Users/lijialiu/Documents/HDM_UI/HDM/anglePass.txt","w");
 
   // Load data to the model
   //cb->loadBody();

@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- * QtVR--Physics-base inverse kinematics and inverse dynamics               *
+ * HDM_UI/HDM--Physics-base inverse kinematics and inverse dynamics               *
  * Copyright (c) 2013 Joseph Cooper                                         *
  *                                                                          *
  * This software is provided 'as-is', without any express or implied        *
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
 
-//    QString filename = "/Users/lijialiu/Documents/QtVR/data/optimization/parameters_opt.txt";
+//    QString filename = "/Users/lijialiu/Documents/HDM_UI/HDM/data/optimization/parameters_opt.txt";
 
 //    QFile file(filename);
 //    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 //   }
 
 //   w.experimentStopSlot();
-//   w.loadMarkerFile("/Users/lijialiu/Documents/QtVR/data/motions/dmotions/02_04_jump.c3d", "/Users/lijialiu/Documents/QtVR/data/motions/dmotions/walk.c3d");
+//   w.loadMarkerFile("/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/02_04_jump.c3d", "/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/walk.c3d");
 
 
 //    w.experimentSlot();
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 //            w.updateLoop();
 //            timer--;
 //    }
-//    fopen("/Users/lijialiu/Documents/QtVR/data/optimization/done.txt","w");
+//    fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/optimization/done.txt","w");
 
 
     w.show();

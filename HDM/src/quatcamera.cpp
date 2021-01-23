@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- * QtVR--Physics-base inverse kinematics and inverse dynamics               *
+ * HDM_UI/HDM--Physics-base inverse kinematics and inverse dynamics               *
  * Copyright (c) 2013 Joseph Cooper                                         *
  *                                                                          *
  * This software is provided 'as-is', without any express or implied        *

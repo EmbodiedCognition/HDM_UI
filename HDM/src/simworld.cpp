@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- * QtVR--Physics-base inverse kinematics and inverse dynamics               *
+ * HDM_UI/HDM--Physics-base inverse kinematics and inverse dynamics               *
  * Copyright (c) 2013 Joseph Cooper                                         *
  *                                                                          *
  * This software is provided 'as-is', without any express or implied        *
@@ -81,8 +81,8 @@ SimWorld::SimWorld(QObject *parent) :
 
  // one set:
   total_torques = 0.0;
-  main_file = fopen("/Users/lijialiu/Documents/QtVR/data/results/totals.txt","w");
-  ground_force = fopen("/Users/lijialiu/Documents/QtVR/data/grounds.txt","w");
+  main_file = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/totals.txt","w");
+  ground_force = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/grounds.txt","w");
 }
 
 

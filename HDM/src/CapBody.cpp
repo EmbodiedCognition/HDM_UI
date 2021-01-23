@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- * QtVR--Physics-base inverse kinematics and inverse dynamics               *
+ * HDM_UI/HDM--Physics-base inverse kinematics and inverse dynamics               *
  * Copyright (c) 2013 Joseph Cooper                                         *
  *                                                                          *
  * This software is provided 'as-is', without any express or implied        *
@@ -1382,10 +1382,10 @@ void CapBody::loadCBody(const char* markerMap, const char* markerRelPos,const ch
 void CapBody::saveBody()
 {
   copyFromSim();
-  saveMarkToBodyMap("/Users/lijialiu/Documents/QtVR/data/markMap.txt");
-  saveMarkRelPosMap("/Users/lijialiu/Documents/QtVR/data/posMap.txt");
-  saveBodyProperties("/Users/lijialiu/Documents/QtVR/data/dimMap.txt");
-  saveJointAnchors("/Users/lijialiu/Documents/QtVR/data/anchorMap.txt");
+  saveMarkToBodyMap("/Users/lijialiu/Documents/HDM_UI/HDM/data/markMap.txt");
+  saveMarkRelPosMap("/Users/lijialiu/Documents/HDM_UI/HDM/data/posMap.txt");
+  saveBodyProperties("/Users/lijialiu/Documents/HDM_UI/HDM/data/dimMap.txt");
+  saveJointAnchors("/Users/lijialiu/Documents/HDM_UI/HDM/data/anchorMap.txt");
 }
 
 /**
@@ -1395,9 +1395,9 @@ void CapBody::saveBody()
 void CapBody::saveModelProperties()
 {
 
-  saveMarkRelPosMap("/Users/lijialiu/Documents/QtVR/modelMap.txt",true);
-  saveFullBodyProperties("/Users/lijialiu/Documents/QtVR/modelBodies.txt");
-  saveJointProperties("/Users/lijialiu/Documents/QtVR/modelJoints.txt");
+  saveMarkRelPosMap("/Users/lijialiu/Documents/HDM_UI/HDM/modelMap.txt",true);
+  saveFullBodyProperties("/Users/lijialiu/Documents/HDM_UI/HDM/modelBodies.txt");
+  saveJointProperties("/Users/lijialiu/Documents/HDM_UI/HDM/modelJoints.txt");
 }
 
 

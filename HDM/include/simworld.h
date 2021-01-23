@@ -144,13 +144,13 @@ public:
   int follow_sequence_source_state;   ///< Are we following markers, joint angles, or torques?
   double total_torques;
 
-  const char* fileDialogPath = "/Users/lijialiu/Documents/QtVR/data/motions";
+  const char* fileDialogPath = "/Users/lijialiu/Documents/HDM_UI/HDM/data/motions";
 
-  const char* defaultMarkerFile = "/Users/lijialiu/Documents/QtVR/data/motions/dmotions/walk.c3d";
-  const char* defaultMarkerMapFile = "/Users/lijialiu/Documents/QtVR/data/motions/dmotions/bodysettings/default_markMap.txt";
-  const char* defaultMarkerRelPosFile = "/Users/lijialiu/Documents/QtVR/data/motions/dmotions/bodysettings/default_posMap.txt";
-  const char* defaultBodyDimFile = "/Users/lijialiu/Documents/QtVR/data/motions/dmotions/bodysettings/default_dimMap.txt";
-  const char* defaultJointAnchorFile = "/Users/lijialiu/Documents/QtVR/data/motions/dmotions/bodysettings/default_anchorMap.txt";
+  const char* defaultMarkerFile = "/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/walk.c3d";
+  const char* defaultMarkerMapFile = "/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/bodysettings/default_markMap.txt";
+  const char* defaultMarkerRelPosFile = "/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/bodysettings/default_posMap.txt";
+  const char* defaultBodyDimFile = "/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/bodysettings/default_dimMap.txt";
+  const char* defaultJointAnchorFile = "/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/bodysettings/default_anchorMap.txt";
 
   const char* markerFile = "";
   const char* markerMapFile = "";

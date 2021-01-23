@@ -1,7 +1,7 @@
 
 /****************************************************************************
  *                                                                          *
- * QtVR--Physics-base inverse kinematics and inverse dynamics               *
+ * HDM_UI/HDM--Physics-base inverse kinematics and inverse dynamics               *
  * Copyright (c) 2013 Joseph Cooper                                         *
  *                                                                          *
  * This software is provided 'as-is', without any express or implied        *
@@ -77,7 +77,7 @@ MainWindow::MainWindow(QWidget *parent) :
   int markCnt = md->marker_count;
   ui->markerCountLineEdit->setText(QString::number(markCnt));
   ui->frameCountLineEdit->setText(QString::number(md->size()));
-  ui->markerFileLineEdit->setText("/Users/lijialiu/Documents/QtVR/data/walk.c3d");
+  ui->markerFileLineEdit->setText("/Users/lijialiu/Documents/HDM_UI/HDM/data/walk.c3d");
   ui->markerFrameStartBox->setValue(0);
   setDataRange(md->size());
 

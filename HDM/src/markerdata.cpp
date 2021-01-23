@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- * QtVR--Physics-base inverse kinematics and inverse dynamics               *
+ * HDM_UI/HDM--Physics-base inverse kinematics and inverse dynamics               *
  * Copyright (c) 2013 Joseph Cooper                                         *
  *                                                                          *
  * This software is provided 'as-is', without any express or implied        *
@@ -33,7 +33,7 @@ MarkerData::MarkerData(dWorldID world,dSpaceID space,QObject *parent) :
 
   this->world=world;
   this->space=space;
-    data.loadFile("/Users/lijialiu/Documents/QtVR/data/motions/dmotions/walk.c3d");
+    data.loadFile("/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/walk.c3d");
   std::cout << "[markerdata] C3D Marker file reloaded...";
   string fulllabel;
   labels.clear();

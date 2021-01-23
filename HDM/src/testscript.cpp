@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- * QtVR--Physics-base inverse kinematics and inverse dynamics               *
+ * HDM_UI/HDM--Physics-base inverse kinematics and inverse dynamics               *
  * Copyright (c) 2013 Joseph Cooper                                         *
  *                                                                          *
  * This software is provided 'as-is', without any express or implied        *
@@ -36,30 +36,30 @@ TestScript::TestScript(MainWindow* win,QObject *parent) :
   testState = 0;
   runScript = false;
 
-  test_angle_round1 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_angle_round1.txt","w");
-  test_angle_round2 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_angle_round2.txt","w");
-  test_angle_round3 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_angle_round3.txt","w");
-  test_torque_round1 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_torque_round1.txt","w");
-  test_torque_round2 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_torque_round2.txt","w");
-  test_torque_round3 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_torque_round3.txt","w");
-  test_position_round1 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_position_round1.txt","w");
-  test_position_round2 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_position_round2.txt","w");
-  test_position_round3 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_position_round3.txt","w");
+  test_angle_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round1.txt","w");
+  test_angle_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round2.txt","w");
+  test_angle_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round3.txt","w");
+  test_torque_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round1.txt","w");
+  test_torque_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round2.txt","w");
+  test_torque_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round3.txt","w");
+  test_position_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round1.txt","w");
+  test_position_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round2.txt","w");
+  test_position_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round3.txt","w");
 }
 
 
 //virtual
 void TestScript::startScript()
 {
-    test_angle_round1 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_angle_round1.txt","w");
-    test_angle_round2 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_angle_round2.txt","w");
-    test_angle_round3 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_angle_round3.txt","w");
-    test_torque_round1 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_torque_round1.txt","w");
-    test_torque_round2 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_torque_round2.txt","w");
-    test_torque_round3 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_torque_round3.txt","w");
-    test_position_round1 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_position_round1.txt","w");
-    test_position_round2 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_position_round2.txt","w");
-    test_position_round3 = fopen("/Users/lijialiu/Documents/QtVR/data/results/test_position_round3.txt","w");
+    test_angle_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round1.txt","w");
+    test_angle_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round2.txt","w");
+    test_angle_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round3.txt","w");
+    test_torque_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round1.txt","w");
+    test_torque_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round2.txt","w");
+    test_torque_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round3.txt","w");
+    test_position_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round1.txt","w");
+    test_position_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round2.txt","w");
+    test_position_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round3.txt","w");
 
 
       std::cout << "[testscript] start test script..." << std::endl;
