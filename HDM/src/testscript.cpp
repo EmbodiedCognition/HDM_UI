@@ -39,9 +39,7 @@ TestScript::TestScript(MainWindow* win,QObject *parent) :
   test_angle_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round1.txt","w");
   test_angle_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round2.txt","w");
   test_angle_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round3.txt","w");
-  test_torque_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round1.txt","w");
   test_torque_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round2.txt","w");
-  test_torque_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round3.txt","w");
   test_position_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round1.txt","w");
   test_position_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round2.txt","w");
   test_position_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round3.txt","w");
@@ -54,9 +52,7 @@ void TestScript::startScript()
     test_angle_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round1.txt","w");
     test_angle_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round2.txt","w");
     test_angle_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_angle_round3.txt","w");
-    test_torque_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round1.txt","w");
     test_torque_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round2.txt","w");
-    test_torque_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_torque_round3.txt","w");
     test_position_round1 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round1.txt","w");
     test_position_round2 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round2.txt","w");
     test_position_round3 = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/test_position_round3.txt","w");
@@ -108,7 +104,6 @@ void TestScript::updateScript()
   case 2:
 
       mainWin->writeAngleFrame(-1, 0, test_angle_round1);
-      mainWin->writeJointFrame(-1, 0, test_torque_round1);
       mainWin->writePositionFrame(-1, 0, test_position_round1);
 
 
@@ -143,7 +138,6 @@ void TestScript::updateScript()
     break;
   case 4:
     mainWin->writeAngleFrame(-1, 0, test_angle_round3);
-    mainWin->writeJointFrame(-1, 0, test_torque_round3);
     mainWin->writePositionFrame(-1, 0, test_position_round3);
     if (eFrame>=wait_frame) {
       testState = 0;
@@ -165,9 +159,7 @@ void TestScript::endScript()
     fclose(test_angle_round1);
     fclose(test_angle_round2);
     fclose(test_angle_round3);
-    fclose(test_torque_round1);
     fclose(test_torque_round2);
-    fclose(test_torque_round3);
     fclose(test_position_round1);
     fclose(test_position_round2);
     fclose(test_position_round3);

@@ -101,7 +101,7 @@ public:
   void writeBodyPositionFrame(int cc,int tri,FILE* file);
   void writeAngleFrame(int cc,int tri,FILE* file);
   void writeJointFrame(int cc,int tri,FILE* file);
-    void writeJointFrame2(int cc,int tri,FILE* file);
+
 
   bool isPaused() { return paused;}
 
@@ -217,7 +217,6 @@ protected:
   int sequence_frame;      ///< What frame are we on as we move through an angle or torque sequence
   FILE* main_file;    ///< Kludge file handle for writing out whatever data is interesting at the moment
   FILE* angle_file;   ///< joint angles at second path
-  FILE* ground_force;
   const char * motiondata;
 
 public:

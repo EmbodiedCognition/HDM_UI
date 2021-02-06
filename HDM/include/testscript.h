@@ -56,9 +56,7 @@ protected:
   FILE* test_angle_round1;
   FILE* test_angle_round2;
   FILE* test_angle_round3;
-  FILE* test_torque_round1;
   FILE* test_torque_round2;
-  FILE* test_torque_round3;
   FILE* test_position_round1;
   FILE* test_position_round2;
   FILE* test_position_round3;

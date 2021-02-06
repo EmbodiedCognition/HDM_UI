@@ -18,33 +18,35 @@ def plot(angles_ori, row, i, type):
 
 
 
-cnt = 250
+
 Jointlist = ["", ""]
 
 nJoint = 22
 
 folder = "."
-f= open(folder+'/angles.txt')
+f= open(folder+'/test_angle_round1.txt')
 joint_angles_ori = [float(x.strip('\n')) for x in f.readlines()]
 row = len(joint_angles_ori)
 row = int(row / (nJoint*3))
 angles_ori = np.reshape(joint_angles_ori, (row,nJoint,3))
-angles_ori = angles_ori[:cnt]
 
-f= open(folder+'/altangles.txt')
+f= open(folder+'/test_angle_round2.txt')
 joint_angles_ori2 = [float(x.strip('\n')) for x in f.readlines()]
-row2 = len(joint_angles_ori2)
-row2 = int(row2 / (nJoint*3))
-angles_ori2 = np.reshape(joint_angles_ori2, (row2,nJoint,3))
-angles_ori2 = angles_ori2[180:cnt+180]
+row = len(joint_angles_ori2)
+row = int(row / (nJoint*3))
+angles_ori2 = np.reshape(joint_angles_ori2, (row,nJoint,3))
 
-print("#########")
+#f= open(folder+'/test_angle_round3.txt')
+#joint_angles_ori3 = [float(x.strip('\n')) for x in f.readlines()]
+#row = len(joint_angles_ori3)
+#row = int(row / (nJoint*3))
+#angles_ori3 = np.reshape(joint_angles_ori3, (row,nJoint,3))
 
 
-
-plot(angles_ori, cnt, 0, '-')
-plot(angles_ori2, cnt, 0, '.')
-#plot(angles_ori3, row, 0, '--')
+axis = 0
+plot(angles_ori, row, axis, '-')
+plot(angles_ori2, row, axis, '.')
+#plot(angles_ori3, row, axis, '--')
 
 
 plt.xlabel('frame')

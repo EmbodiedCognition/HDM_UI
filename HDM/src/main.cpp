@@ -35,54 +35,6 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-
-//    QString filename = "/Users/lijialiu/Documents/HDM_UI/HDM/data/optimization/parameters_opt.txt";
-
-//    QFile file(filename);
-//    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-//        std::cout << "file error" << std::endl;
-//        return 0;
-//    }
-//    QTextStream in(&file);
-
-//    double p1, p2, p3, p4;
-//    in >> p1;
-//    in >> p2;
-//    in >> p3;
-//    in >> p4;
-
-//   std::cout << p1 << std::endl;
-//   std::cout << p2 << std::endl;
-//   std::cout << p3 << std::endl;
-//   std::cout << p4 << std::endl;
-
-//   file.close();
-
-//   w.updateParameters(p1, p2, p3, p4, 0.0);
-
-
-//   w.experimentSlot();
-
-//   int timer = 50;
-//   while(timer > 0) {
-//       w.updateLoop();
-//       timer--;
-//   }
-
-//   w.experimentStopSlot();
-//   w.loadMarkerFile("/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/02_04_jump.c3d", "/Users/lijialiu/Documents/HDM_UI/HDM/data/motions/dmotions/walk.c3d");
-
-
-//    w.experimentSlot();
-
-//    timer = 1500;
-//    while(timer >= 0){
-//            w.updateLoop();
-//            timer--;
-//    }
-//    fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/optimization/done.txt","w");
-
-
     w.show();
     return a.exec();
 

@@ -43,10 +43,10 @@ angles_ori2 = np.reshape(joint_angles_ori2, (row,nJoint,3))
 #angles_ori3 = np.reshape(joint_angles_ori3, (row,nJoint,3))
 
 
-
-plot(angles_ori, row, 0, '-')
-plot(angles_ori2, row, 0, '.')
-#plot(angles_ori3, row, 0, '--')
+axis = 0
+plot(angles_ori, row, axis, '-')
+plot(angles_ori2, row, axis, '.')
+#plot(angles_ori3, row, axis, '--')
 
 
 plt.xlabel('frame')

@@ -82,15 +82,12 @@ SimWorld::SimWorld(QObject *parent) :
  // one set:
   total_torques = 0.0;
   main_file = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/results/totals.txt","w");
-  ground_force = fopen("/Users/lijialiu/Documents/HDM_UI/HDM/data/grounds.txt","w");
 }
 
 
 SimWorld::~SimWorld()
 {
   fclose(main_file);
-  fclose(ground_force);
-  //fclose(markFile);
 }
 
 
@@ -365,13 +362,6 @@ void SimWorld::step()
       line.p2[0] = contact_point[ii][0]+ground_feedback[ii].f1[0]*.001;
       line.p2[1] = contact_point[ii][1]+ground_feedback[ii].f1[1]*.001;
       line.p2[2] = contact_point[ii][2]+ground_feedback[ii].f1[2]*.001;
-
-      fprintf(ground_force,"%lf ",line.p2[0]);
-      fprintf(ground_force,"\n");
-      fprintf(ground_force,"%lf ",line.p2[1]);
-      fprintf(ground_force,"\n");
-      fprintf(ground_force,"%lf ",line.p2[2]);
-      fprintf(ground_force,"\n");
       //line_list.push_back(line);
     }
 
@@ -600,6 +590,7 @@ void SimWorld::writeAngleFrame(int cc,int tri,FILE* file)
 }
 
 void SimWorld::writeJointFrame(int cc,int tri,FILE* file){
+
       for (int jj=0;jj<body->JOINT_COUNT;++jj) {
         for (int kk=0;kk<3;++kk) {
           fprintf(file,"%lf ",body->forceValue(jj,kk));
@@ -611,17 +602,7 @@ void SimWorld::writeJointFrame(int cc,int tri,FILE* file){
       }
 }
 
-void SimWorld::writeJointFrame2(int cc,int tri,FILE* file){
-      for (int jj=0;jj<body->JOINT_COUNT;++jj) {
-        for (int kk=0;kk<3;++kk) {
-          fprintf(file,"%lf ",body->forceValue2(jj,kk));
-          fprintf(file,"\n");
-          if (jj == 20 || jj == 21){
-            total_torques += abs(body->forceValue2(jj,kk));
-          }
-        }
-      }
-}
+
 
 void SimWorld::makePlotEmit(){
     emit makePlot();

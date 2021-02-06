@@ -212,6 +212,7 @@ MainWindow::MainWindow(QWidget *parent) :
   ui->playAllButton->setCheckable(true);
 
 
+  ui->torqueRadio->setVisible(false);
 
   // Hook up the interface elements to their respecitve functionality
   connect(ui->saveButton,SIGNAL(clicked()),capBody,SLOT(saveBody()));
@@ -252,7 +253,6 @@ MainWindow::MainWindow(QWidget *parent) :
   connect(ui->markerRadio,SIGNAL(toggled(bool)),this,SLOT(useMarkers(bool)));
   connect(ui->angleRadio,SIGNAL(toggled(bool)),this,SLOT(useAngles(bool)));
   connect(ui->altRadio,SIGNAL(toggled(bool)),this,SLOT(useAltAngles(bool)));
-  connect(ui->torqueRadio,SIGNAL(toggled(bool)),this,SLOT(useTorques(bool)));
   connect(ui->playAllButton,SIGNAL(clicked(bool)),this,SLOT(playPauseAll(bool)));
   connect(ui->playPauseDataButton,SIGNAL(clicked(bool)),this,SLOT(playPauseData(bool)));
   connect(ui->playPauseSimButton,SIGNAL(clicked(bool)),this,SLOT(playPauseSim(bool)));
@@ -964,11 +964,6 @@ void MainWindow::writeAngleFrame(int cc,int tri,FILE* file)
 void MainWindow::writeJointFrame(int cc,int tri,FILE* file)
 {
   getWorld()->writeJointFrame(cc,tri,file);
-}
-
-void MainWindow::writeJointFrame2(int cc,int tri,FILE* file)
-{
-  getWorld()->writeJointFrame2(cc,tri,file);
 }
 
 

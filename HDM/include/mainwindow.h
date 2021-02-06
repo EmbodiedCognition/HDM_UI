@@ -103,7 +103,6 @@ public:
   void writePositionFrame(int cc,int tri,FILE* file);
   void writeAngleFrame(int cc,int tri,FILE* file);
   void writeJointFrame(int cc,int tri,FILE* file);
-  void writeJointFrame2(int cc,int tri,FILE* file);
 
 
   bool updateButtonStatus;
