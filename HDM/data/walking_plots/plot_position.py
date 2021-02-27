@@ -7,14 +7,14 @@ import matplotlib.animation as animation
 
 
 def plot(angles_ori, row, i, type):
-    plt.plot(range(row), angles_ori[:, 4, i], type, label= 'r_elbow')
+    plt.plot(range(row), angles_ori[:, 11, i], type, label= 'r_elbow')
     plt.plot(range(row), angles_ori[:, 8, i], type, label= 'l_elbow')
 
-    plt.plot(range(row), angles_ori[:, 12, i], type, label= 'r_hip')
-    plt.plot(range(row), angles_ori[:, 16, i], type, label= 'l_hip')
+    plt.plot(range(row), angles_ori[:, 2, i], type, label= 'r_frontWaist')
+    plt.plot(range(row), angles_ori[:, 3, i], type, label= 'l_frontWaist')
 
-    plt.plot(range(row), angles_ori[:, 13, i], type, label= 'r_knee')
-    plt.plot(range(row), angles_ori[:, 17, i], type, label= 'l_knee')
+    plt.plot(range(row), angles_ori[:, 24, i], type, label= 'r_knee')
+    plt.plot(range(row), angles_ori[:, 21, i], type, label= 'l_knee')
 
 
 
