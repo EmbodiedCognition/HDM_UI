@@ -20,6 +20,6 @@ Open dynamic Engine: https://www.ode.org/
 
 Run the human dynamic model user interface and then press the "run test" button
 
-# Motion capture data
+### Motion capture data
 Relevant virtual reality tracing data: https://www.dropbox.com/s/8ndz0331wj90hbn/subjects_mocap.zip?dl=0
 
